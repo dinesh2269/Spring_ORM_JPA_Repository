@@ -63,6 +63,18 @@ public class StudentController {
 
 	}
 
+	@RequestMapping(value = "/find", method = RequestMethod.GET)
+
+	public void saveNewStudent() {
+
+		// ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		//
+		// StudentService studentService = context.getBean(StudentService.class);
+
+		stdService.findById((long) 1);
+
+	}
+
 	/*
 	 * 
 	 * Above method is supposed to be a post call like this

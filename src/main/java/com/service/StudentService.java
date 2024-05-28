@@ -58,4 +58,7 @@ public class StudentService {
 		return studentRepository.findAll();
 	}
 
+	public void findById(Long id) {
+		System.out.println(studentRepository.findById(id));
+	}
 }
